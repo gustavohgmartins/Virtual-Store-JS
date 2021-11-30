@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/register.css">
+    <script src="https://kit.fontawesome.com/2b013c0946.js" crossorigin="anonymous"></script>
+
+
+    <title>Create Account</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../assets/logoblack.png"></a>
+    </header>
+    <hr class="hr">
+    <div id="main">
+        <div class="container">
+            <div class="formInput">
+                <i class="fas fa-envelope"></i>
+                <input class="input" type="email" id="registerEmail" placeholder="E-mail*">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="formInput">
+                <i class="fas fa-lock"></i>
+                <input class="input" type="password" id="registerPassword" placeholder="Password*">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="formInput">
+                <input class="input" type="password" id="confirmPassword" placeholder="Confirm Password*">
+                <i class="far fa-eye showPassword" onclick="showPassword();"></i>
+                <i class="far fa-eye-slash showPassword" onclick="hidePassword();"></i>
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="formInput">
+                <input class="input" type="text" id="fullName" placeholder="Full Name*">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div class="formInput">
+                <input class="input" type="text" id="date"class="form-control" onkeypress="$(this).mask('00/00/0000')"placeholder="Birth Date">
+                <i class="far fa-times-circle"></i>
+            </div>
+            
+            <div class="formInput">
+                <input class="input"type="text" class="form-control" id="cpf"onkeypress="$(this).mask('000.000.000-00');"placeholder="CPF*">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <label id="emptyField">Please fill out all fields</label>
+            <label id="emailTaken">This e-mail adress is already registered</label>
+            <label id="invalidEmail">Invalid E-mail</label>
+            <label id="matchPassword">The passwords don't match</label>
+            <label id="invalidCpf">Invalid CPF</label>
+
+            <input type="submit" value="Create Account" class="loginButton" onclick="submit();"></input>
+        </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script type="text/javascript" src="../js/register.js" defer></script>    
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+:root {
+    --primary_color:#60D9FF;
+    --secondary_color:#1D74FF;
+    --primary_font_family: 'Recursive', sans-serif;
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--primary_font_family);
+    font-size: 20px;   
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+.hr {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, transparent,var(--secondary_color), transparent);  
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header a{
+    height: 100%;
+}
+header a img{
+    margin-top: 15%;
+    height: 60%;
+}
+
+body{
+    height: 100%;
+    min-width: none;
+}
+
+input{
+    border: none;
+    background-color: transparent;
+    margin-left: 20px;
+    width: 100%;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+} 
+
+label{
+    margin-top: 20px;
+    color: tomato;
+}
+
+#main{
+    height: 93%;
+    display: flex;
+    
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.container{
+    margin-top: 30px;
+    height: 93%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(126, 126, 126);
+    
+}
+
+.formInput{
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 35px;
+    padding: 5px; 
+    width: 100%;
+}
+
+.formInput:not(ivalido)::placeholder{
+    color: rgb(177, 177, 177);
+}
+
+
+
+.invalido{
+    border: none;
+    border-bottom: 1px solid tomato;
+    margin-top: 35px;
+    padding: 5px;
+    color: tomato;
+}
+
+.formInput.invalido i.fa-times-circle{
+    display: block;
+}
+
+.formInput:not(.invalido) i.fa-times-circle{
+    display: none;
+}
+
+.loginButton {
+    height:50px;
+    width:400px;
+    color: white;
+    font-family: var(--primary_font_family);
+    background:linear-gradient(322.24deg, var(--primary_color) -4.38%, var(--secondary_color) 48.84%);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.245848), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+    margin-top: 40px;
+} 
+
+.loginButton:hover{
+    cursor: pointer;
+    background: linear-gradient(126.58deg, var(--primary_color) -3.24%, var(--secondary_color) 57.16%);
+    box-shadow: 0px 5px 50px rgba(71, 184, 255, 0.75), 0px 10px 10px -4px rgba(58, 125, 233, 0.360113), inset 4px 4px 8px rgba(175, 230, 255, 0.521689), inset -4px -4px 8px rgba(19, 95, 216, 0.356998);
+}
+
+.showPassword{
+    font-size: 20px;
+    color:grey;
+    margin-right: 10px;
+}
+
+.showPassword:hover{
+    cursor: pointer;
+}
+
+
+/*------------MEDIA QUERIES-----------*/
+
+
+@media(max-width:500px){
+
+
+    .loginButton{
+        width: 90%;
+    }
+    .container{
+        width: 90%;
+    }
+
+}

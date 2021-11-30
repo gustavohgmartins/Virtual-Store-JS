@@ -1,0 +1,235 @@
+:root {
+    --primary_color:#60D9FF;
+    --secondary_color:#1D74FF;
+    --primary_font_family: 'Recursive', sans-serif;
+}
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--primary_font_family);
+    font-size: 20px;   
+}
+html{
+    height: 100vh;
+    width: 100vW;
+}
+body{
+    background-color: rgb(238, 238, 238);
+    height: 100%;
+    min-width: 350px;
+
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(22, 21, 51);
+}
+div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrapper{
+    margin-top: 70px;
+    display: flex;
+    width: 100%;
+    border: none;
+}
+#container{
+    width: 50%;
+    margin-left: 7.5%;
+    margin-right: 2.5%;
+    border-radius: 7px;
+    background-color: white;
+    padding-left: 50px;
+    
+    
+}
+#products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-right: 7.5%;
+    margin-left: 2.5%;
+    border-radius: 7px;
+    background-color: white;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    padding-left: 50px ;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.7);
+}
+.method{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.method i{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.brief{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border:none;
+}
+.label{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.7);
+}
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.items{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.description h1{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.4);
+}
+.description p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.644);
+}
+.shipment p{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(0, 197, 0);
+}
+.shipment{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.total p{
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+}
+.total h1{
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+.continue{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border:none;
+}
+ button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+ button:hover{
+    background-color: rgb(91, 173, 255);
+}
+svg {
+    height: 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#creditCard{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+}
+.information{
+    width: 70%;
+    height: 500px;
+    margin-top: 50px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+.data{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.data input{
+    margin-top: 25px;
+    margin-left: 20px;
+    border:none;
+    padding: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+.card button{
+    margin-top: 50px;
+    margin-left: 160px;
+}
+header{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header a{
+    height: 100%;
+}
+header a img{
+    margin-top: 15%;
+    height: 60%;
+}

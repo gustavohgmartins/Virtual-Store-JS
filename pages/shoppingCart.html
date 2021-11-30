@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="topHeader">
+            <div class="logo" onclick="window.location.href = '../index.html';">
+                <img src="../assets/logo.png">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="What are you looking for?">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="publi">
+                BLACK FRIDAY WEEK!
+            </div>
+        </div>
+        <div class="bottomHeader">
+            <div class="navbar">
+                <div class="menu">
+                    <i class="fas fa-bars"></i>
+                    <a href="#">Menu</a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="cep">
+                        <h1>inform your</h1>
+                        <h2>Address</h2>
+                    </div>
+                </div>
+                <div class="navOption">
+                    <a href="#">Categories</a>
+                    <a href="#">Best sellers</a>
+                    <a href="#">On the rise</a>
+                    <a href="#">Contact us</a>
+                </div> 
+            </div>
+            <div class="account">
+                <a class="login" href="../pages/login.html">login</a>
+                <a class="login" href="../pages/register.html">Create account</a>
+                <i id="profile" class="fas fa-user-circle" onclick="dropDown()"></i>
+                <div id="myDropdown" class="dropdown-content1">
+                    <a href="#" onclick="logout();">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="hr">
+    <div id="items">
+    </div>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/shoppingCart.js" defer></script>
+</body>
+</html>
+

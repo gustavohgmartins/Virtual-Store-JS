@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="https://kit.fontawesome.com/2b013c0946.js" crossorigin="anonymous"></script>
+    
+    
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../assets/logoblack.png"></a>
+    </header>
+    <hr class="hr">
+    <div id="main">
+        <div class="container">
+            <div class="login">
+                <div class="formInput username">
+                    <i class="fas fa-envelope"></i>
+                    <input class="input" type="email" id="username" placeholder="E-mail*" required>
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="formInput password">
+                    <i class="fas fa-lock"></i>
+                    <input class="input" id="password" type="password" placeholder="Password*" required>
+                    <i class="far fa-eye showPassword" onclick="showPassword();"></i>
+                    <i class="far fa-eye-slash showPassword" onclick="hidePassword();"></i>
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <label id="incorrect">Your e-mail or password is incorrect</label>
+                <label id="emptyField">Please fill out all fields</label>
+                <div class="forgotPassword">
+                    <p>forgot your password?</p>
+                </div>
+            </div>
+            <input type="submit" value="Log in" class="loginButton" onclick="submit();"></input>
+
+            <p id="signUp">Don't have an account? <a href="../pages/register.html">Sign up</a></p>
+            
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/login.js" defer></script>
+</body>
+</html>
